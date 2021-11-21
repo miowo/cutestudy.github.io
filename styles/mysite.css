@@ -1,0 +1,197 @@
+html{
+  background-image: url('/Users/Violet/Desktop/codes/myprojects/studyweb_pj/frontend/demo/images/bg.jpg');
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+body{
+  background: #ffe6ee;
+  margin: 0px 150px;
+  position: center;
+
+
+  border: solid 5px;
+  border-color: white;
+  border-radius: 5px;
+
+  width: 970px;
+}
+
+.panel{
+  height: 40px;
+  width: 100%;
+  background-color: white;
+}
+
+/*styling the navigation*/
+nav{
+  background-color: #ffe6ee;
+  border: solid 10px;
+  border-color: white;
+  border-left: 0px;
+  border-right: 0px;
+  height: 40px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+
+nav ul li{
+  float: left;
+}
+
+nav ul li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 22px;
+  font-size: 17px;
+  font-weight: 20px;
+  border-left: solid 0.25px;
+}
+
+nav ul li a:hover{
+  background-color: #ffd1dc;
+}
+
+#start{
+  background-color:  #ffd1dc;
+}
+
+/*styling the playlist
+.playlist{
+  padding-left: 10px;
+  padding-top: 10px;
+}*/
+
+.profile{
+  font-family: 'Press Start 2P', sans-serif;
+  color: white;
+  width: 970px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topHeader{
+  padding: 15px 15px;
+  border-bottom: solid 2px;
+  font-size: 15px;
+  background-color: #ffd1dc;
+  width: auto;
+}
+
+#topHeader a{
+  text-decoration: none;
+  color: white;
+}
+
+#topHeader a:hover{
+  color: #ffe6ee;
+}
+
+#leftProfile{
+  width: 300px; /*fixed width may cause issues in responsive web*/
+  height:680px;
+  border-right: 2px solid;
+  background-color: #ffd1dc;
+  display: inline-block;
+  float: left;
+}
+
+#leftProfile img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 30px 50px;
+}
+
+#leftProfile h1{
+  font-size: 30px;
+  padding-left: 25%;
+  color: white;
+}
+
+#leftProfile h4{
+  padding-left: 30%;
+}
+
+#leftProfile a{
+  text-decoration: none;
+  color: white;
+}
+
+#leftProfile a:hover{
+  color: #ffe6ee;
+}
+
+#mainProfile{
+  width: 668px;
+  float: right;
+  display: inline-block;
+}
+
+#mainProfile p{
+  padding-left: 10px;
+}
+
+.footer{
+  text-align: right;
+  background-color: #ffd1dc;
+  border-top: 2px solid white;
+  color: white;
+  padding: 2px 4px;
+}
+
+/****BELOW IS THE STYLING OF THE BUTTONS****/
+.onclick{
+  padding-left: 10px;
+}
+
+.onclick button{
+  border: none;
+  outline: none;
+  background-color: #ffe6ee;
+}
+
+.onclick button:hover{
+  background-color: #ffd1dc;
+}
+
+.onclick button label{
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+/****STYLING THE DIVS FOR ONCLICK EVENTS****/
+
+.playlist iframe{
+  width: 40%;
+  padding-left: 16px;
+  padding-top: 10px;
+
+}
+
+.to-do{
+  background-color: #B5d3e9;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  left:120px;
+  display: none;
+}
+
+.to-do header{
+  font-size: 20px;
+  color: #ffff;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ffff;
+}
