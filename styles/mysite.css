@@ -197,7 +197,7 @@ nav ul li a:hover{
 }
 
 .to-do{
-  background-color: #B5d3e9;
+  background-color: #fff;
   height: 300px;
   width: 300px;
   border-radius: 10px;
@@ -205,11 +205,35 @@ nav ul li a:hover{
   top: 220px;
   left:800px;
   display: none;
+  border-color: #ffd1dc;
 }
 
 .to-do header{
   font-size: 20px;
-  color: #ffff;
+  color: #ffd1dc;
   padding: 20px 10px;
-  border-bottom: 1px solid #ffff;
+  border-bottom: 1px solid #ffd1dc;
+}
+
+.to-do label, .to-do p{
+  color: #ffd1dc;
+}
+
+/*styling the checkbox*/
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: #ffd1dc;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
 }
