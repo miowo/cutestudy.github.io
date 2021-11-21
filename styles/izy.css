@@ -9,10 +9,12 @@ body{
   margin: 0px 150px;
   position: center;
 
-  overflow-x: hidden;
+
   border: solid 5px;
   border-color: white;
   border-radius: 5px;
+
+  width: 970px; 
 }
 
 .panel{
