@@ -1,5 +1,6 @@
 /***drag feature in mysite.html****/
 const todo = document.querySelector('.to-do');
+const music=document.querySelector('.playlist');
 
 if(todo){
 
@@ -17,5 +18,24 @@ if(todo){
 
   document.addEventListener("mouseup", ()=>{
     todo.removeEventListener("mousemove", onDrag);
+  });
+}
+
+if(music){
+
+  function onDrag2({movementX, movementY}){
+    let getStyle = window.getComputedStyle(music);
+    let left = parseInt(getStyle.left);
+    let top = parseInt(getStyle.top);
+    music.style.left = `${left + movementX}px`;
+    music.style.top = `${top + movementY}px`;
+  }
+
+  music.addEventListener("mousedown", ()=>{
+    music.addEventListener("mousemove", onDrag2);
+  });
+
+  document.addEventListener("mouseup", ()=>{
+    music.removeEventListener("mousemove", onDrag2);
   });
 }
