@@ -146,11 +146,13 @@ nav ul li a:hover{
 }
 
 .footer{
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 10px;
   text-align: right;
   background-color: #ffd1dc;
   border-top: 2px solid white;
   color: white;
-  padding: 2px 4px;
+  padding: 5px 5px;
 }
 
 /****BELOW IS THE STYLING OF THE BUTTONS****/
