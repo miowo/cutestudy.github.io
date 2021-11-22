@@ -217,23 +217,56 @@ nav ul li a:hover{
 
 .to-do label, .to-do p{
   color: #ffd1dc;
+  font-size: 15px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
 }
 
 /*styling the checkbox*/
 input[type="checkbox"] {
+
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: #fff;
+  background-color: #ffe6ee;
   /* Not removed via appearance */
   margin: 0;
 
   font: inherit;
-  color: #ffd1dc;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
+  color: #ffe6ee;
+  width: 0.75em;
+  height: 0.75em;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:before{
+  position: absolute;
+  content: "";
+  background-color: #ffe6ee;
+  height: 60%;
+  width: 100%;
+  top: -59%;
+  border-radius: 75px 75px 0 0;
+}
+
+input[type="checkbox"]:after{
+  position: absolute;
+  content: "";
+  background-color: #ffe6ee;
+  height: 60%;
+  width: 100%;
+  transform: rotate(-90deg);
+  border-radius: 75px 75px 0 0;
+  top: 20%;
+  right: 78%;
+}
+
+input[type="checkbox"]:checked,
+input:checked[type="checkbox"]:before,
+input:checked[type="checkbox"]:after{
+  background-color: #ffd1dc;
 }
