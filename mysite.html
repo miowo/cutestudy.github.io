@@ -11,93 +11,122 @@
   </head>
 
   <body>
-    <div class="panel">
-      <nav>
-        <ul>
-          <li><a href="#" id="start">૮ ˶ᵔ ᵕ ᵔ˶ ა</a></li>
-          <li><a href="izy.html">૮꒰ ˶• ༝ •˶꒱ა./づᡕᠵ᠊ᡃ࡚ࠢ࠘ ⸝່ࠡࠣ᠊߯᠆ࠣ࠘ᡁࠣ࠘᠊᠊°.~♡︎</a></li>
-          <li><a href="#"> ૮₍˶ •. • ⑅₎ა ♡</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="outer-wrapper">
+      <div class="wrapper">
 
-    <br>
-    <!--no ads!-->
-    <!--<div class="playlist">
-      <iframe src="https://open.spotify.com/embed/playlist/6P0qkAs2SYUNPHEXTqJyh0?utm_source=generator" width="30%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      <br><br>
-      <iframe src="https://open.spotify.com/embed/playlist/6rFMp94NVi2zJe4MAckapm?utm_source=generator" width="30%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>-->
-
-    <div class="profile">
-      <div id="topHeader">
-        <a href="mysite.html">work</a> | <a href="#">break</a> | <a href="#">stats</a>
-      </div>
-
-      <div id="leftProfile">
-        <img src="images/bg.jpg" alt="Avatar">
-        <div id="nametag"><h1>miowo</h1></div>
-
-        <h4>She/her</h4><br><br>
-
-        <h4>━━━━━━━<br></h4>
-        <p>ㅤㅤ<a href="https://www.instagram.com/miwo_moo/" target="_blank">social</a><br><p>
-        <h4>━━━━━━━</h4>
-
-      </div>
-
-      <div id="mainProfile">
-        <p>> hi welcome to my study page!<br><br></p>
-        <div class="onclick">
-          <button type="button" id="button1" title="for my spotify playlist!"><label>MUSIC</label></button> |
-          <button type="button" id="button2" title="a draggable to-do list!"><label>TO-DO</label></button> |
-          <button type="button" id="button3"><label>TIMER</label></button> |
-          <button type="button" id="button4"><label>REMINDERS</label></button>
-        </div>
-        <br>
-        <!--divs for each onclick event-->
-        <div class="playlist">
-          <iframe src="https://open.spotify.com/embed/playlist/6Mg6NRDXCsbC9N4UeF5Dzx?utm_source=generator&color=white" width="300" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="panel">
+          <nav>
+            <ul>
+              <li><a href="#" id="start">♡︎</a></li>
+              <li><a href="izy.html">☆</a></li>
+            </ul>
+          </nav>
         </div>
 
-        <div class="to-do">
-          <header>To Do List:</header>
+        <div class="slide-one" id="work">
 
-          <ul>
-            <div class="container">
-              <label class="checkboxText">
-                <input type="checkbox">
-                drink water
-              </label>
+          <div class="profile">
+            <div id="topHeader">
+              <a href="#work">work</a> | <a href="#break">break</a> | <a href="#stats">stats</a>
             </div>
 
-            <br>
-            <div class="container">
-              <label class="checkboxText">
-                <input type="checkbox">
-                take a break
-              </label>
+            <div id="leftProfile">
+              <img src="images/bg.jpg" alt="Avatar">
+              <div id="nametag"><h1>miowo</h1></div>
+
+              <h4>She/her</h4><br><br>
+
+              <h4>━━━━━━━<br></h4>
+              <p>ㅤㅤ<a href="https://www.instagram.com/miwo_moo/" target="_blank">social</a><br><p>
+                <h4>━━━━━━━</h4>
+
             </div>
 
-            <p>drag me!</p>
+            <div id="mainProfile">
+              <p>> hi welcome to my study page!<br><br></p>
+              <div class="onclick">
+                <button type="button" id="button1" title="for my spotify playlist!"><label>MUSIC</label></button> |
+                <button type="button" id="button2" title="a draggable to-do list!"><label>TO-DO</label></button> |
+                <button type="button" id="button3"><label>TIMER</label></button> |
+                <button type="button" id="button4"><label>REMINDERS</label></button>
+              </div>
+              <br>
+              <!--divs for each onclick event-->
+              <div class="playlist">
+                <iframe src="https://open.spotify.com/embed/playlist/6Mg6NRDXCsbC9N4UeF5Dzx?utm_source=generator&color=white" width="300" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              </div>
+
+              <div class="to-do">
+                <header>To Do List:</header>
+
+                <ul>
+                  <div class="container">
+                    <label class="checkboxText">
+                      <input type="checkbox">
+                      drink water
+                    </label>
+                  </div>
+
+                  <br>
+                  <div class="container">
+                    <label class="checkboxText">
+                      <input type="checkbox">
+                      take a break
+                    </label>
+                  </div>
+
+                  <p>drag me!</p>
+              </div>
+
+              <div class="timer">
+              </div>
+
+              <div class="reminders">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="footer">
+              Copyright &copy; 2021 Violet Ong
+          </div>
+
+          <!--use 'draggable' for draggable navigations-->
+          <script src="scripts/msDrag.js"></script>
         </div>
 
-        <div class="timer">
+        <div class="slide-two" id="break">
+          <div class=profile>
+            <div id="topHeader">
+              <a href="#work">work</a> | <a href="#break">break</a> | <a href="#stats">stats</a>
+            </div>
+
+            <div class="body">
+
+            </div>
+          </div>
+          <div class="footer">
+              Copyright &copy; 2021 Violet Ong
+          </div>
         </div>
 
-        <div class="reminders">
+        <div class="slide-three" id="stats">
+          <div class=profile>
+            <div id="topHeader">
+              <a href="#work">work</a> | <a href="#break">break</a> | <a href="#stats">stats</a>
+            </div>
+
+            <div class="body">
+
+            </div>
+          </div>
+          <div class="footer">
+              Copyright &copy; 2021 Violet Ong
+          </div>
         </div>
 
       </div>
     </div>
-
-    <div class="footer">
-      Copyright &copy; 2021 Violet Ong
-    </div>
-
-    <!--use 'draggable' for draggable navigations-->
-    <script src="scripts/msDrag.js"></script>
-
   </body>
 </html>
 

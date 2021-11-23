@@ -1,10 +1,11 @@
 html{
-  background-image: url('https://miowo.github.io/cutestudy.github.io/images/bg.jpg');
+  background-image: url('https://miowo.github.io/cutestudy.github.io/images/overlay.gif');
   /*background-repeat: no-repeat;
   background-size: cover;*/
+  background-color: white;
 }
 
-body{
+.slide-one,.slide-two,.slide-three{
   background: #ffe6ee;
   margin: 0px 150px;
   position: center;
@@ -16,22 +17,28 @@ body{
 
   width: 970px;
 }
+/*horizontal scrolling*/
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+}
+
+.slide-two{
+
+}
+
+/***--------------****/
 
 .panel{
-  height: 40px;
-  width: 100%;
-  background-color: white;
+  height: 100%;
+  width: 48px;
+  background-color: #ffe6ee;
+  border-top: 5px solid;
+  border-color: white;
 }
 
 /*styling the navigation*/
-nav{
-  background-color: #ffe6ee;
-  border: solid 10px;
-  border-color: white;
-  border-left: 0px;
-  border-right: 0px;
-  height: 40px;
-}
 
 nav ul{
   list-style: none;
@@ -64,11 +71,7 @@ nav ul li a:hover{
   background-color:  #ffd1dc;
 }
 
-/*styling the playlist
-.playlist{
-  padding-left: 10px;
-  padding-top: 10px;
-}*/
+/***Styling main body***/
 
 .profile{
   font-family: 'Press Start 2P', sans-serif;
@@ -157,7 +160,7 @@ nav ul li a:hover{
 
 /****BELOW IS THE STYLING OF THE BUTTONS****/
 .onclick{
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .onclick button{
@@ -183,8 +186,8 @@ nav ul li a:hover{
   width: 300px;
 
   position: absolute;
-  top: 220px;
-  left: 470px;
+  top: 170px;
+  left: 540px;
 
   border-radius: 10px;
   display: none;
@@ -202,8 +205,8 @@ nav ul li a:hover{
   width: 300px;
   border-radius: 10px;
   position: absolute;
-  top: 220px;
-  left:800px;
+  top: 170px;
+  left:860px;
   display: none;
   border-color: #ffd1dc;
 }
@@ -269,4 +272,10 @@ input[type="checkbox"]:checked,
 input:checked[type="checkbox"]:before,
 input:checked[type="checkbox"]:after{
   background-color: #ffd1dc;
+}
+
+/*STYLING BREAK BODY*/
+.body{
+  height:680px;
+  width: 100%;
 }
