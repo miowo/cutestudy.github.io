@@ -16,6 +16,7 @@ html{
   border-radius: 5px;
 
   width: 970px;
+  height: 100%;
 }
 /*horizontal scrolling*/
 .wrapper{
@@ -24,8 +25,8 @@ html{
   width: 300vw;
 }
 
-.slide-two{
-
+::-webkit-scrollbar{
+  display: none; 
 }
 
 /***--------------****/
@@ -278,4 +279,10 @@ input:checked[type="checkbox"]:after{
 .body{
   height:680px;
   width: 100%;
+  position: relative;
+}
+
+.body p{
+  padding-left: 10px;
+  position: absolute;
 }
